@@ -32,9 +32,6 @@ modules:
           # Use the `Dummy` audio driver to avoid error messages when starting the application from a terminal
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
-      # TODO: Replace commit hashes below with a stable tag reference once a release
-      #       includes the required files
-
       - type: file
         url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6/icon.png
         sha256: f684242c21dd47ab3ef1388e0119b7321e0af6d406c8ba446c8ef291349d2aae
