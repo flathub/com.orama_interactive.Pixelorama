@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.6/Pixelorama.Linux.64-bit.zip
-        sha256: 16f6d4f9d33108758c4e56f9c1390cb97576d7707f835f12adf7e634facf84c0
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.6.1/Pixelorama.Linux.64-bit.zip
+        sha256: d68676cf17392cabd2ebbff9be480258c82e45be094cee6c4919eccd3b4ad169
         strip-components: 0
 
       - type: script
@@ -48,6 +48,7 @@ modules:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
       - install -Dm644 Pixelorama.pck /app/bin/pixelorama.pck
       - mv Brushes/ /app/bin/Brushes/
+      - mv Palettes/ /app/bin/Palettes/
       - install -Dm644 icon.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 com.orama_interactive.Pixelorama.desktop -t /app/share/applications/
       - install -Dm644 com.orama_interactive.Pixelorama.appdata.xml -t /app/share/appdata/
