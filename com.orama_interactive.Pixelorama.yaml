@@ -42,7 +42,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/48981e16b2c22898874a2cd9da8c13290edd9583/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: dac6b9fef01aff5143809a31561eee809db3c6192ffd8ed5a3542f6a7ca2a733
+        sha256: 1cb9f93d1b1c69055046b98bca8fbf1dd029e2166bb08ee30f7ecdd597b580ee
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
