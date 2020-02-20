@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.6.1/Pixelorama.Linux.64-bit.zip
-        sha256: d68676cf17392cabd2ebbff9be480258c82e45be094cee6c4919eccd3b4ad169
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.6.2/Pixelorama.Linux.64-bit.zip
+        sha256: bed859480deb0c67b3274fbae7c9629457ebbe78d15116788e049f790b483c27
         strip-components: 0
 
       - type: script
@@ -37,12 +37,12 @@ modules:
         sha256: f684242c21dd47ab3ef1388e0119b7321e0af6d406c8ba446c8ef291349d2aae
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6/Misc/Linux/com.orama_interactive.Pixelorama.desktop
-        sha256: 99bd15e3b91c85975da2aa9cc624e82485da26be48d6ddab40e62116771457d0
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6.2/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        sha256: ef0301413737461fd0aaa0f7d432d77686178ee14ece1111153f0cb9891fa313
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 37ecf00db33165abeece182e14c8568da49e08decd1e781526145d3c3a2af71c
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/48981e16b2c22898874a2cd9da8c13290edd9583/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: dac6b9fef01aff5143809a31561eee809db3c6192ffd8ed5a3542f6a7ca2a733
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
