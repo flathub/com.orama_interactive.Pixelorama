@@ -20,9 +20,9 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.6.2/Pixelorama.Linux.64-bit.zip
-        sha256: 6272d7baee4e2a63c3d24354dc2c1f2cf4843a7fce3bbb060ae43d0a06ce44bb
-        strip-components: 0
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.7/Pixelorama.v0.7.Linux.64-bit.zip
+        sha256: bd6bb866ac98ca3d0091bf78cc1617984732a3670a6c2b9859f2b12bf8648ea0
+        strip-components: 2
 
       - type: script
         dest-filename: pixelorama.sh
@@ -33,22 +33,22 @@ modules:
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.7/assets/graphics/icons/icon.png
         sha256: f684242c21dd47ab3ef1388e0119b7321e0af6d406c8ba446c8ef291349d2aae
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.6.2/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.7/Misc/Linux/com.orama_interactive.Pixelorama.desktop
         sha256: 5d9b6e1a44b07bfcfbf4fb3575d30df457571335c0c200f4130af51884f34b99
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/48981e16b2c22898874a2cd9da8c13290edd9583/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 1cb9f93d1b1c69055046b98bca8fbf1dd029e2166bb08ee30f7ecdd597b580ee
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/29a4d218afe77987a12e2314ece6bb84fa67eac2/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 22098341228acc5940c72a741c2e04804d1373f7f89c282526cfa66adddd94e0
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
       - install -Dm644 Pixelorama.pck /app/bin/pixelorama.pck
-      - mv Brushes/ /app/bin/Brushes/
-      - mv Palettes/ /app/bin/Palettes/
+      - mv libgifexporter.x11.64.so /app/bin/
+      - mv {Brushes,Palettes,Patterns}/ /app/bin/
       - install -Dm644 icon.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 com.orama_interactive.Pixelorama.desktop -t /app/share/applications/
       - install -Dm644 com.orama_interactive.Pixelorama.appdata.xml -t /app/share/appdata/
