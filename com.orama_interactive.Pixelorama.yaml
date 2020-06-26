@@ -48,7 +48,8 @@ modules:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
       - install -Dm644 Pixelorama.pck /app/bin/pixelorama.pck
       - mv libgifexporter.x11.64.so /app/bin/
-      - mv {Brushes,Palettes,Patterns}/ /app/bin/
+      - mkdir -p /app/bin/pixelorama/
+      - mv {Brushes,Palettes,Patterns}/ /app/bin/pixelorama/
       - install -Dm644 icon.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 com.orama_interactive.Pixelorama.desktop -t /app/share/applications/
       - install -Dm644 com.orama_interactive.Pixelorama.appdata.xml -t /app/share/appdata/
