@@ -22,7 +22,7 @@ modules:
       - type: archive
         url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.8/Pixelorama.Linux-64bit.tar.gz
         sha256: 17a815cfeac3aadc9f6ffdd31de530f6c723b7deeb65df1a5878cbedfa4af97a
-        strip-components: 2
+        strip-components: 1
 
       - type: script
         dest-filename: pixelorama.sh
@@ -47,8 +47,7 @@ modules:
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
       - install -Dm644 Pixelorama.pck /app/bin/pixelorama.pck
-      - mv libgifexporter.x11.64.so /app/bin/
-      - mv {Brushes,Palettes,Patterns}/ /app/bin/
+      - mv pixelorama_data/{Brushes,Palettes,Patterns}/ /app/bin/
       - install -Dm644 icon.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 com.orama_interactive.Pixelorama.desktop -t /app/share/applications/
       - install -Dm644 com.orama_interactive.Pixelorama.appdata.xml -t /app/share/appdata/
