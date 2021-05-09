@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.8.2/Pixelorama.Linux-64bit.tar.gz
-        sha256: aed8bfc5ea68f144a2ee2673d5a3be6088979471e98cc84a6dd543de86b8e7c0
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.8.3/Pixelorama.Linux-64bit.tar.gz
+        sha256: 7268b2e59fb7957e4bfa716ba8b5e51981754b39b916cb3e60339810d47fee53
         strip-components: 1
 
       - type: script
@@ -33,16 +33,16 @@ modules:
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.2/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.3/assets/graphics/icons/icon.png
         sha256: d92715606fb34e1863ecccd929675b742988ae55118146e2d9aee41c650b0933
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.2/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.3/Misc/Linux/com.orama_interactive.Pixelorama.desktop
         sha256: 5d9b6e1a44b07bfcfbf4fb3575d30df457571335c0c200f4130af51884f34b99
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.2/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 971c3d5c7a9258419f14dae0b81c38e13b1dcabfbf1e578baaed86fde1c28fbe
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.8.3/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 038a59a02c839db501d41884abb447733838b2564832173c5acb89d4a111c822
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
