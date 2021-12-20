@@ -1,6 +1,6 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: '3.3'
+base-version: '3.4'
 runtime: org.freedesktop.Platform
 runtime-version: "21.08"
 default-branch: stable
@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.9/Pixelorama.Linux-64bit.tar.gz
-        sha256: 6d5833dea839d330e4fb8b63ea43fc22b7d9eeae712f255b9337195d6d5568a7
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.9.1/Pixelorama.Linux-64bit.tar.gz
+        sha256: 79fe8220b4b8f586999ae5476820699695e653c69224420528a0aa037b70948c
         strip-components: 1
 
       - type: script
@@ -33,16 +33,16 @@ modules:
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9.1/assets/graphics/icons/icon.png
         sha256: dd7cba7e5f41ca001aaa297a27c816308f430cbbacaf717da94ebab2b9803b54
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9.1/Misc/Linux/com.orama_interactive.Pixelorama.desktop
         sha256: 5d9b6e1a44b07bfcfbf4fb3575d30df457571335c0c200f4130af51884f34b99
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 7c9f409128dc820851f0d0ea6b1a6872ba471a52b755e08c4cc07284dfe81f1b
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.9.1/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: d7c9e93af26c6ad099df5907791d3f5b6e82b33a034aae4283b8a11de57012eb
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
