@@ -1,6 +1,6 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: '3.4'
+base-version: '3.5'
 runtime: org.freedesktop.Platform
 runtime-version: "21.08"
 default-branch: stable
@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.10.1/Pixelorama.Linux-64bit.tar.gz
-        sha256: 5cacdf26f8013e720311e9aad719217b763fe082bca73259791c87032b3ea2a1
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.10.2/Pixelorama.Linux-64bit.tar.gz
+        sha256: fd4cbf812cf25ef934529dfac4558c621997f7afdc480d3243b08a8de570514c
         strip-components: 1
 
       - type: script
@@ -33,16 +33,16 @@ modules:
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.1/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.2/assets/graphics/icons/icon.png
         sha256: dd7cba7e5f41ca001aaa297a27c816308f430cbbacaf717da94ebab2b9803b54
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.1/Misc/Linux/com.orama_interactive.Pixelorama.desktop
-        sha256: 5d9b6e1a44b07bfcfbf4fb3575d30df457571335c0c200f4130af51884f34b99
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.2/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        sha256: 1f36288567e7e863b902e52ef6a9546591303977470f8b7e9daaa2a4eb3a35b0
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.1/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 34d736a54eaae36915023a1403d98a0d7a90f7c10836d760e797774842047d17
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.2/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 288c7e32024aec7a000ad046d2d9e88baa0e82f5fb817b8ae48dff4341f8cb0a
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
