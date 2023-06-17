@@ -42,7 +42,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: b7424427e622a2da3af194cb36215a53fa1c6819a0b99eed4d7dad62f1da5789
+        sha256: dbb842647b2b99a135ddb3d451c2d8c6bef1aded4724af3c1eceb794527c9907
 
       - type: file
         url: https://raw.githubusercontent.com/luiq54/Pixelorama/mimetypes/v0.11/Linux/com.orama_interactive.Pixelorama.xml
