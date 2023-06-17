@@ -1,8 +1,8 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: '3.5'
+base-version: "3.5"
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: "22.08"
 default-branch: stable
 sdk: org.freedesktop.Sdk
 command: pixelorama
@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.10.3/Pixelorama.Linux-64bit.tar.gz
-        sha256: de5619bf8e53ac2a80491fc5e0dae32bd6c6427f2e66c9c85063f6f1fe5221fd
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v0.11/Pixelorama.Linux-64bit.tar.gz
+        sha256: de314db0a449c7afa190d130e49b8719ea0f249f79bf5e3787adc7e13913876f
         strip-components: 1
 
       - type: script
@@ -33,16 +33,20 @@ modules:
           - /app/bin/godot-runner --audio-driver Dummy --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.3/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11/assets/graphics/icons/icon.png
         sha256: dd7cba7e5f41ca001aaa297a27c816308f430cbbacaf717da94ebab2b9803b54
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.3/Misc/Linux/com.orama_interactive.Pixelorama.desktop
-        sha256: 1f36288567e7e863b902e52ef6a9546591303977470f8b7e9daaa2a4eb3a35b0
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        sha256: f55e641204bd30f9343bb3e42ab180522ae2ffdcd60b1b65f84e18dacc6a99f1
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.10.3/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
         sha256: b7424427e622a2da3af194cb36215a53fa1c6819a0b99eed4d7dad62f1da5789
+
+      - type: file
+        url: https://raw.githubusercontent.com/luiq54/Pixelorama/mimetypes/v0.11/Linux/com.orama_interactive.Pixelorama.xml
+        sha256: 4fcf324e7c1eb8277bd9368047c0f9368ff1a32d3aba14d6b7d6459efcf7054f
 
     build-commands:
       - install -Dm755 pixelorama.sh /app/bin/pixelorama
@@ -51,3 +55,4 @@ modules:
       - install -Dm644 icon.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 com.orama_interactive.Pixelorama.desktop -t /app/share/applications/
       - install -Dm644 com.orama_interactive.Pixelorama.appdata.xml -t /app/share/appdata/
+      - install -Dm644 com.orama_interactive.Pixelorama.xml -t /app/share/mime/packages/
