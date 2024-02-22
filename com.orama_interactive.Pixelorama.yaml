@@ -1,9 +1,8 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: "3.5"
+base-version: "3.5-23.08"
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
-default-branch: stable
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 command: pixelorama
 rename-icon: icon
@@ -43,6 +42,8 @@ modules:
       - type: file
         url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11.3/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
         sha256: 63bb456dbfa13137a2a1cad50171555ba9b585f4e05261fd03f888689ce68ea1
+      - type: patch
+        path: pixelorama-appdata.patch
 
       - type: file
         url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v0.11.3/Misc/Linux/com.orama_interactive.Pixelorama.xml

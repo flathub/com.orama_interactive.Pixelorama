@@ -1,0 +1,19 @@
+--- a/com.orama_interactive.Pixelorama.appdata.xml	2024-02-18 15:03:00.067999014 -0500
++++ b/com.orama_interactive.Pixelorama.appdata.xml	2024-02-18 15:03:49.217528048 -0500
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright (c) 2019-present Orama Interactive and contributors -->
+ <component type="desktop">
+-  <id>com.orama_interactive.Pixelorama.desktop</id>
++  <id>com.orama_interactive.Pixelorama</id>
+   <name>Pixelorama</name>
+   <summary>2D sprite editor with animation support</summary>
+   <description>
+@@ -12,6 +12,7 @@
+   </description>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>MIT</project_license>
++  <launchable type="desktop-id">com.orama_interactive.Pixelorama.desktop</launchable>
+   <developer_name>Orama Interactive</developer_name>
+   <url type="homepage">https://www.oramainteractive.com/</url>
+   <url type="bugtracker">https://github.com/Orama-Interactive/Pixelorama/issues</url>
