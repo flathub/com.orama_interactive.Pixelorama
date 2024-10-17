@@ -1,8 +1,8 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: "4.3"
+base-version: '4.3-24.08'
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: pixelorama
 rename-icon: icon
