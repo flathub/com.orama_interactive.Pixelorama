@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.1.4/Pixelorama-Linux-64bit.tar.gz
-        sha256: d9224e2303a9479a2d5765397ded62c275462941b88c9574568dab395e0d56e5
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.1.5/Pixelorama-Linux-64bit.tar.gz
+        sha256: 80c1618e5d97b8d82849d9278414d75609f9b7ce70bf2febc05ea09ae13e8672
         strip-components: 1
 
       - type: script
@@ -33,21 +33,21 @@ modules:
           - /app/bin/godot-runner --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.43/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.5/assets/graphics/icons/icon.png
         sha256: 184a59fbb665f1b9e8b2bc0d8e969903c1554cf9cbc729d68d02e846682e6419
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.4/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.5/Misc/Linux/com.orama_interactive.Pixelorama.desktop
         sha256: 357d058e56a4286dea412ed4694a9b95336405387a3fee3ad9f10019de9dc753
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.4/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: 40a089a55295a2cb190b902609b07efffdb0f44c15f66a093b4375483c5455e8
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.5/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 9dc3aaadb8026c62a9acb5f5d27adfc03610417d815771de253a31a8425fdafd
       - type: patch
         path: pixelorama-appdata.patch
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.4/Misc/Linux/com.orama_interactive.Pixelorama.xml
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.1.5/Misc/Linux/com.orama_interactive.Pixelorama.xml
         sha256: 4fcf324e7c1eb8277bd9368047c0f9368ff1a32d3aba14d6b7d6459efcf7054f
 
     build-commands:
