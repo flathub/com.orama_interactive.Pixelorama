@@ -21,7 +21,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.1.6/Pixelorama-Linux-64bit.tar.gz
-        sha256: 80c1618e5d97b8d82849d9278414d75609f9b7ce70bf2febc05ea09ae13e8672
+        sha256: bafbf03f2fdb0e0fa6902f16a56e3aed039e94e76884e428c0f87634da20dad4
         strip-components: 1
 
       - type: script
