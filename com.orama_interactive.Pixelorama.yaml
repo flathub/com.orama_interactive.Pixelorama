@@ -41,8 +41,8 @@ modules:
         sha256: 6769fef634dc40b04e33c30a45e9dfffcb5754e4e5096d7a5fa609f6f1fa41b7
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: f53639fb3f82d837b8379940c7e8381073eab4e9c2d39451c766276bca9f0b77
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/da4392e20076cc1b5f514588edf6dcc4581d3973/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 0ac55684321c99bad9bd2d5103e7dcd0a6ca920ffa3149eea7062cceb9fd771d
       - type: patch
         path: pixelorama-appdata.patch
 
