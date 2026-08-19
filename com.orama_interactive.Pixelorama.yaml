@@ -1,6 +1,6 @@
 app-id: com.orama_interactive.Pixelorama
 base: org.godotengine.godot.BaseApp
-base-version: '4.6'
+base-version: '4.7'
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
@@ -20,8 +20,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.2/Pixelorama-Linux-64bit.tar.gz
-        sha256: 7bb4f4a62da84a05680a97a28b55b5cd7c155b5990211a2ce4a122dffd85d0f6
+        url: https://github.com/Orama-Interactive/Pixelorama/releases/download/v1.2.1/Pixelorama-Linux-64bit.tar.gz
+        sha256: 6c2434304a6af1f9558aa2809121a499ddad3437229611544739c6d0f803e747
         strip-components: 1
 
       - type: script
@@ -33,19 +33,19 @@ modules:
           - /app/bin/godot-runner --main-pack /app/bin/pixelorama.pck "$@"
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2/assets/graphics/icons/icon.png
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2.1/assets/graphics/icons/icon.png
         sha256: 184a59fbb665f1b9e8b2bc0d8e969903c1554cf9cbc729d68d02e846682e6419
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2/Misc/Linux/com.orama_interactive.Pixelorama.desktop
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2.1/Misc/Linux/com.orama_interactive.Pixelorama.desktop
         sha256: 6769fef634dc40b04e33c30a45e9dfffcb5754e4e5096d7a5fa609f6f1fa41b7
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/dd8b50d97f9538361ebdc771cf990cc1f80cb327/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
-        sha256: d4a3bbd1c5ba0dc4e325504c09cf7a702ba8dd23b507cdee0996a49d9009616d
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2.1/Misc/Linux/com.orama_interactive.Pixelorama.appdata.xml
+        sha256: 80950aecd8a066492833fad28284aed2f8babb7c6da54441fa61c29be39283fa
 
       - type: file
-        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2/Misc/Linux/com.orama_interactive.Pixelorama.xml
+        url: https://raw.githubusercontent.com/Orama-Interactive/Pixelorama/v1.2.1/Misc/Linux/com.orama_interactive.Pixelorama.xml
         sha256: c3486ca631430eb0785af8069895c61cbb920b09851b346f1d2d82aeadc3a1f4
 
     build-commands:
